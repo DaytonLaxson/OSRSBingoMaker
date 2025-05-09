@@ -1,0 +1,11 @@
+.bingo-board {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+  
+.bingo-tile {
+    background-color: hsl(0, 75%, 34%);
+    border: 10px solid #000000;
+    text-align: center;
+}
