@@ -11,11 +11,6 @@ app.get('/api/status', (req, res) => {
   res.json({ status: 'Server is running!' });
 });
 
-// For any other GET request, send the index.html
-app.get(/(.*)/, (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public/index.html'));
-});
-
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
